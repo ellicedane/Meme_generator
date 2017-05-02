@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/txv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="Welcom to MemeMe"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a meme:"
+        android:textAlignment="center" />
+
+    <GridView
+        android:id="@+id/grd_memes"
+        android:layout_width="wrap_content"
+        android:layout_height="352dp"
+        android:layout_gravity="center"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:minHeight="90dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:layout_weight="0.75" />
+
+    <EditText
+        android:id="@+id/etResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="@android:color/transparent" />
+
+</LinearLayout>
